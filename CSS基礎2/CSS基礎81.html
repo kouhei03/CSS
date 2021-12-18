@@ -1,0 +1,49 @@
+<!--CSSのアウトラインの色
+このoutline-colorプロパティは、アウトラインの色を設定するために使用されます。
+
+色は次の方法で設定できます。
+
+name-「red」などの色の名前を指定します
+HEX-「＃ff0000」のような16進値を指定します
+RGB-「rgb（255,0,0）」のようにRGB値を指定します
+HSL-「hsl（0、100％、50％）」のようにHSL値を指定します
+invert-色の反転を実行します（背景色に関係なく、アウトラインが表示されるようにします）
+次の例は、さまざまな色のさまざまなアウトラインを示しています。
+また、これらの要素の輪郭の内側にも細い黒い境界線があることに注意してください。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: red;
+}
+
+p.ex2 {
+  border: 2px solid black;
+  outline-style: dotted;
+  outline-color: blue;
+}
+
+p.ex3 {
+  border: 2px solid black;
+  outline-style: outset;
+  outline-color: grey;
+}
+</style>
+</head>
+<body>
+
+<h2>The outline-color Property</h2>
+<p>The outline-color property is used to set the color of the outline.</p>
+
+<p class="ex1">A solid red outline.</p>
+<p class="ex2">A dotted blue outline.</p>
+<p class="ex3">An outset grey outline.</p>
+
+</body>
+</html>
+
+
