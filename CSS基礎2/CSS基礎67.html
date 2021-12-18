@@ -1,0 +1,44 @@
+<!--CSSパディング
+CSSpaddingプロパティは、定義された境界線の内側で、要素のコンテンツの周囲にスペースを生成するために使用されます。
+
+CSSを使用すると、パディングを完全に制御できます。要素の両側（上、右、下、左）のパディングを設定するためのプロパティがあります。
+
+パディング-個々の側面
+CSSには、要素の両側のパディングを指定するためのプロパティがあります。
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+すべてのパディングプロパティには、次の値を指定できます。
+
+長さ-px、pt、cmなどでパディングを指定します。
+％ -包含要素の幅の％でパディングを指定します
+継承-パディングを親要素から継承する必要があることを指定します
+注：負の値は許可されていません。
+<div>要素の4辺すべてに異なるパディングを設定します。  
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+</style>
+</head>
+<body>
+
+<h2>Using individual padding properties</h2>
+
+<div>This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+
+</body>
+</html>
+
+

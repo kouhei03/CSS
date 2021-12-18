@@ -1,0 +1,38 @@
+<!--パディングと要素の幅
+CSSwidthプロパティは、要素のコンテンツ領域の幅を指定します。
+コンテンツ領域は、要素（ボックスモデル）のパディング、境界線、およびマージンの内側の部分です。
+したがって、要素に指定された幅がある場合、その要素に追加されたパディングは、
+要素の合計幅に追加されます。これは多くの場合、望ましくない結果です。
+ここで、<div>要素の幅は300pxです。ただし、<div>要素の実際の幅は350px
+（300px +左のパディングの25px +右のパディングの25px）になります。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.ex1 {
+  width: 300px;
+  background-color: yellow;
+}
+
+div.ex2 {
+  width: 300px;
+  padding: 25px;
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Padding and element width</h2>
+
+<div class="ex1">This div is 300px wide.</div>
+<br>
+
+<div class="ex2">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
+
+</body>
+</html>
+
+
+    

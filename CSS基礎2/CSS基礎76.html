@@ -1,0 +1,38 @@
+<!--最大幅の設定
+このmax-widthプロパティは、要素の最大幅を設定するために使用されます。
+
+max-widthで指定することができる長さの値（これはデフォルトである。
+何ら最大幅が存在しないことを意味する）なしに含むブロックの（％）、
+またはセットPX、CMなどのような、またはパーセントで。
+
+上記の問題は、<div>ブラウザウィンドウが要素の幅（500px）よりも小さい場合に発生します。
+    次に、ブラウザはページに水平スクロールバーを追加します。
+
+max-width代わりに、この状況で使用すると、ブラウザの小さなウィンドウの処理が改善されます。
+ヒント：ブラウザウィンドウを幅500px未満にドラッグして、2つのdivの違いを確認してください。
+
+この<div>要素の高さは100ピクセル、最大幅は500ピクセルです。 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  max-width: 500px;
+  height: 100px;
+  background-color: powderblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Set the max-width of an element</h2>
+
+<div>This div element has a height of 100px and a max-width of 500px.</div>
+
+<p>Resize the browser window to see the effect.</p>
+
+</body>
+</html>
+
+
