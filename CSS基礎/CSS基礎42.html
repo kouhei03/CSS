@@ -1,0 +1,59 @@
+<!--CSSボーダー
+CSSの境界線プロパティを使用すると、要素の境界線のスタイル、幅、および色を指定できます。
+-->
+<!--CSSボーダースタイル
+このborder-styleプロパティは、表示する境界線の種類を指定します。
+
+次の値が許可されます。
+
+dotted -点線の境界線を定義します
+dashed -破線の境界線を定義します
+solid -実線の境界線を定義します
+double -二重境界線を定義します
+groove-3Dの溝付き境界線を定義します。効果は境界線の色の値によって異なります
+ridge-3Dの隆起した境界線を定義します。効果は境界線の色の値によって異なります
+inset-3Dはめ込み境界線を定義します。効果は境界線の色の値によって異なります
+outset-3Dの最初の境界線を定義します。効果は境界線の色の値によって異なります
+none -境界線を定義しません
+hidden -隠し境界線を定義します
+border-styleプロパティは、1〜4つの値から（トップボーダー、右境界、
+下境界線、および左ボーダーのために）を持つことができます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+</style>
+</head>
+<body>
+
+<h2>The border-style Property</h2>
+<p>This property specifies what kind of border to display:</p>
+
+<p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+
+</body>
+</html>
+
+
