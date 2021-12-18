@@ -1,0 +1,64 @@
+
+<!--border-styleプロパティには4つの値があります。
+
+ボーダースタイル：点線の実線の二重破線。
+上枠が点線
+右の境界線はしっかりしています
+下の境界線は2倍です
+左の境界線は破線です
+場合border-styleプロパティは、3つの値があります。
+
+ボーダースタイル：点線の実線のダブル。
+上枠が点線
+左右の境界線はしっかりしています
+下の境界線は2倍です
+場合border-styleプロパティは、2つの値があります。
+
+ボーダースタイル：点線の実線。
+上と下の境界線は点線です
+左右の境界線はしっかりしています
+場合はborder-styleプロパティが1つの値を持ちます。
+
+ボーダースタイル：点線;
+4つの境界線すべてが点線で示されています
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  text-align: center;
+}
+/* Four values */
+p.four {
+  border-style: dotted solid double dashed;
+}
+
+/* Three values */
+p.three {
+  border-style: dotted solid double;
+}
+
+/* Two values */
+p.two {
+  border-style: dotted solid;
+}
+
+/* One value */
+p.one {
+  border-style: dotted;
+}
+</style>
+</head>
+<body>
+
+<h2>Individual Border Sides</h2>
+<p class="four">4 different border styles.</p>
+<p class="three">3 different border styles.</p>
+<p class="two">2 different border styles.</p>
+<p class="one">1 border style.</p>
+
+</body>
+</html>
+
+
