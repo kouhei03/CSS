@@ -1,0 +1,80 @@
+<!--RGBAを使用した透明度
+上記の例のように、子要素に不透明度を適用したくない場合は、
+RGBAカラー値を使用します。次の例では、テキストではなく背景色の不透明度を設定します。
+
+CSSの色の章から、RGBを色の値として使用できることを学びました。RGBに加えて、
+アルファチャネル（RGB A）でRGBカラー値を使用できます。これは色の不透明度を指定します。
+
+RGBAカラー値は、rgba（red、green、blue、alpha）で指定されます。 
+アルファパラメータは0.0（完全に透明）から1.0（完全に不透明）の間の数です。
+
+ヒント： RGBAカラーについて詳しくは、CSSカラーの章をご覧ください。-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background: rgb(0, 128, 0);
+}
+
+div.first {
+  background: rgba(0, 128, 0, 0.1);
+}
+
+div.second {
+  background: rgba(0, 128, 0, 0.3);
+}
+
+div.third {
+  background: rgba(0, 128, 0, 0.6);
+}
+</style>
+</head>
+<body>
+
+<h1>Transparent Boxes 2</h1>
+
+<p>Result with opacity:</p>
+
+<div style="opacity:0.1;">
+  <h1>10% opacity</h1>
+</div>
+
+<div style="opacity:0.3;">
+  <h1>30% opacity</h1>
+</div>
+
+<div style="opacity:0.6;">
+  <h1>60% opacity</h1>
+</div>
+
+<div>
+  <h1>opacity 1</h1>
+</div>
+
+<p>Result with rgba():</p>
+
+<div class="first">
+  <h1>10% opacity</h1>
+</div>
+
+<div class="second">
+  <h1>30% opacity</h1>
+</div>
+
+<div class="third">
+  <h1>60% opacity</h1>
+</div>
+
+<div>
+  <h1>default</h1>
+</div>
+
+<p>Notice how the text gets transparent as well as the background color when using the opacity property.</p>
+
+</body>
+</html>
+
+
+
