@@ -1,0 +1,52 @@
+<!--CSSレイアウト-幅と最大幅-->
+<!--width、max-width、marginを使用：auto;
+前の章で述べたように; ブロックレベルの要素は、常に使用可能な全幅を占めます（可能な限り左右に伸びます）。
+
+widthブロックレベルの要素のを設定すると、その要素がコンテナの端まで伸びるのを防ぐことができます。次に、マージンをautoに設定して、要素をコンテナ内で水平方向に中央揃えにすることができます。要素は指定された幅を占め、残りのスペースは2つの余白の間で均等に分割されます。
+
+この<div>要素の幅は500pxで、マージンはautoに設定されています。
+
+注：上記の問題は、<div>ブラウザウィンドウが要素の幅よりも小さい場合に発生します。次に、ブラウザはページに水平スクロールバーを追加します。
+
+max-width代わりに、この状況で使用すると、ブラウザの小さなウィンドウの処理が改善されます。これは、サイトを小さなデバイスで使用できるようにする場合に重要です。
+
+この<div>要素の最大幅は500pxで、マージンはautoに設定されています。
+
+ヒント： 2つのdivの違いを確認するには、ブラウザウィンドウのサイズを500px未満の幅に変更してください。
+
+上記の2つのdivの例を次に示します。
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.ex1 {
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+div.ex2 {
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Max-width</h2>
+
+<div class="ex1">This div element has width: 500px;</div>
+<br>
+
+<div class="ex2">This div element has max-width: 500px;</div>
+
+<p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between 
+the two divs!</p>
+
+</body>
+</html>
+
+

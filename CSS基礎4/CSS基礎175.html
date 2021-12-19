@@ -1,0 +1,47 @@
+<!--位置プロパティ
+このpositionプロパティは、要素に使用される配置方法のタイプを指定します。
+
+5つの異なる位置値があります。
+
+static
+relative
+fixed
+absolute
+sticky
+次に、top、bottom、left、およびrightプロパティを使用して要素が配置されます。ただし、これらのプロパティは、position プロパティを最初に設定しない限り機能しません。また、位置の値によって動作も異なります。
+
+位置：静的;
+HTML要素はデフォルトで静的に配置されます。
+
+静的に配置された要素は、top、bottom、left、およびrightのプロパティの影響を受けません。
+
+の要素position: static;は特別な方法で配置されません。それは常にページの通常の流れに従って配置されます：
+
+この<div>要素の位置は次のとおりです。static;
+使用されるCSSは次のとおりです。
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>position: static;</h2>
+
+<p>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+
+<div class="static">
+This div element has position: static;
+</div>
+
+</body>
+</html>
+
+
