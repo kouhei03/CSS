@@ -1,0 +1,70 @@
+<!--HTMLリストとCSSリストのプロパティ
+HTMLには、主に2つのタイプのリストがあります。
+
+順序付けられていないリスト（<ul>）-リストアイテムは箇条書きでマークされています
+順序付きリスト（<ol>）-リストアイテムは数字または文字でマークされます
+CSSリストのプロパティを使用すると、次のことができます。
+
+順序付きリストに異なるリストアイテムマーカーを設定する
+順序付けされていないリストに異なるリストアイテムマーカーを設定する
+リストアイテムマーカーとして画像を設定する
+リストとリストアイテムに背景色を追加する
+さまざまなリストアイテムマーカー
+list-style-typeプロパティは、リスト項目マーカーの種類を指定します。
+
+次の例は、使用可能なリストアイテムマーカーの一部を示しています。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+</style>
+</head>
+<body>
+
+<h2>The list-style-type Property</h2>
+
+<p>Example of unordered lists:</p>
+<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+</body>
+</html>
+
+
