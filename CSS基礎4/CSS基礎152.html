@@ -1,0 +1,37 @@
+<!--リスト-省略形のプロパティ
+list-styleプロパティは、速記プロパティです。
+これは、1つの宣言ですべてのリストプロパティを設定するために使用されます。-->
+<!--省略形プロパティを使用する場合、プロパティ値の順序は次のとおりです。
+
+list-style-type （list-style-imageが指定されている場合、
+何らかの理由で画像を表示できない場合は、このプロパティの値が表示されます）
+list-style-position （リストアイテムマーカーをコンテンツフローの内側に表示するか外側に表示するかを指定します）
+list-style-image （画像をリストアイテムマーカーとして指定します）
+上記のプロパティ値のいずれかが欠落している場合、欠落しているプロパティのデフォルト値が挿入されます（存在する場合）。
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style: square inside url("sqpurple.gif");
+}
+</style>
+</head>
+<body>
+
+<h2>The list-style Property</h2>
+
+<p>The list-style property is a shorthand property, which is used to set all the list properties in one declaration.</p>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
+
+
