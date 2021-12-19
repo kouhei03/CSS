@@ -1,20 +1,22 @@
-<!--テーブルの境界線
-CSSでテーブルの境界線を指定するには、borderプロパティを使用します。
-
-次の例では、<table>、<th>、および<td>要素の黒い境界線を指定しています。
--->
+<!--テーブルの境界線を折りたたむ
+このborder-collapseプロパティは、テーブルの境界線を1つの境界線に折りたたむかどうかを設定します。-->
 <!DOCTYPE html>
 <html>
 <head>
 <style>
-table, th, td {
+table, td, th {
   border: 1px solid black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 </style>
 </head>
 <body>
 
-<h2>Add a border to a table:</h2>
+<h2>Let the table borders collapse</h2>
 
 <table>
   <tr>

@@ -1,0 +1,64 @@
+<!--垂直方向の配置
+このvertical-alignプロパティは、コンテンツの垂直方向の配置（上、下、中央など）を<th>または<td>に設定します。
+
+デフォルトでは、テーブル内のコンテンツの垂直方向の配置は中央にあります（<th>要素と<td>要素の両方）。
+
+次の例では、<td>要素の垂直方向のテキスト配置を下に設定します。-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    table, td, th {
+      border: 1px solid black;
+    }
+    
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td {
+      height: 50px;
+      vertical-align: bottom;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>The vertical-align Property</h2>
+    
+    <p>This property sets the vertical alignment (like top, bottom, or middle) of the content in th or td.</p>
+    
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+      </tr>
+    </table>
+    
+    </body>
+    </html>
+    
+    
+    
