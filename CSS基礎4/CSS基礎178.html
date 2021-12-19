@@ -1,0 +1,45 @@
+<!--位置：絶対;
+の要素position: absolute;は、（固定のようにビューポートに対して
+配置されるのではなく）最も近い位置に配置された祖先に対して配置されます。
+
+でも; 絶対位置の要素に位置の祖先がない場合は、ドキュメントの本文を使用し、
+ページのスクロールに沿って移動します。
+
+注：絶対位置の要素は通常のフローから削除され、要素と重なる可能性があります。
+
+簡単な例を次に示します。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
+
+</body>
+</html>
+
+

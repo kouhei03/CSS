@@ -1,0 +1,32 @@
+<!--z-indexプロパティ
+要素を配置すると、他の要素と重なる可能性があります。
+
+このz-indexプロパティは、要素のスタック順序を指定します
+（どの要素を他の要素の前または後ろに配置する必要があります）。
+
+要素は、正または負のスタック順序を持つことができます。
+
+これは見出しです画像のz-indexは-1であるため、テキストの後ろに配置されます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<img src="w3css.gif" width="100" height="140">
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+</body>
+</html>
+
+
