@@ -1,0 +1,51 @@
+<!--CSSの色の章から、RGBを色の値として使用できることを学びました。RGBに加えて、
+    アルファチャネル（RGBA）でRGBカラー値を使用できます。これは色の不透明度を指定します。
+
+RGBAカラー値は、rgba（red、green、blue、alpha）で指定されます。 アルファパラメータは0.0
+（完全に透明）から1.0（完全に不透明）の間の数です。
+
+ヒント： RGBAカラーについて詳しくは、CSSカラーの章をご覧ください。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background: rgb(76, 175, 80);
+  padding: 10px;
+}
+
+div.first {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+div.second {
+  background: rgba(76, 175, 80, 0.3);
+}
+
+div.third {
+  background: rgba(76, 175, 80, 0.6);
+}
+</style>
+</head>
+<body>
+
+<h1>Transparent Box</h1>
+<p>With opacity:</p>
+<div style="opacity:0.1;"><p>10% opacity</p></div>
+<div style="opacity:0.3;"><p>30% opacity</p></div>
+<div style="opacity:0.6;"><p>60% opacity</p></div>
+<div><p>opacity 1</p></div>
+
+<p>With RGBA color values:</p>
+<div class="first"><p>10% opacity</p></div>
+<div class="second"><p>30% opacity</p></div>
+<div class="third"><p>60% opacity</p></div>
+<div><p>default</p></div>
+
+<p>Notice how the text gets transparent as well as the background color when using the opacity property.</p>
+
+</body>
+</html>
+
+
