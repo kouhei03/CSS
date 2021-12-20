@@ -1,0 +1,45 @@
+<!--説明された例：
+
+float: left; -floatを使用して、ブロック要素を隣り合わせにフロートさせます
+display: block; -パディング（および必要に応じて高さ、幅、マージンなど）を指定できます
+padding: 8px; -見栄えを良くするために、各<a>要素の間にパディングを指定します
+background-color: #dddddd; -各<a>要素に灰色の背景色を追加します
+ヒント：全幅の背景色が必要な場合は、各<a>要素の代わりにbackground-colorを<ul>に追加します-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<p>A background color is added to the list instead of each link to create a full-width background color.</p>
+<p><b>Note:</b> overflow:hidden is added to the ul element to prevent li elements from going outside of the list.</p>
+
+</body>
+</html>
+
+

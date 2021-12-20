@@ -1,0 +1,41 @@
+<!--説明された例：
+
+display: block; -リンクをブロック要素として表示すると、リンク領域全体（テキストだけでなく）が
+クリック可能になり、幅（および必要に応じてパディング、マージン、高さなど）を指定できるようになります。
+width: 60px;-ブロック要素は、デフォルトで使用可能な全幅を占めます。60ピクセル幅を指定したい
+<ul>の幅を設定し、<a>の幅を削除することもできます。これは、ブロック要素として表示されるときに
+    使用可能な全幅を占めるためです。これにより、前の例と同じ結果が得られます。-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+} 
+
+li a {
+  display: block;
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<p>A background color is added to the links to show the link area.</p>
+<p>Notice that the whole link area is clickable, not just the text.</p>
+
+</body>
+</html>
+
+
