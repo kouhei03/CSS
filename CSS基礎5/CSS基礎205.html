@@ -1,0 +1,43 @@
+<!--CSSコンビネータ
+CSSセレクターには、複数の単純なセレクターを含めることができます。
+単純なセレクターの間に、コンビネーターを含めることができます。
+
+CSSには4つの異なるコンビネータがあります。
+
+子孫セレクター（スペース）
+子セレクター（>）
+隣接する兄弟セレクター（+）
+一般的な兄弟セレクター（〜）
+子孫セレクター
+子孫セレクターは、指定された要素の子孫であるすべての要素と一致します。
+
+次の例では、<div>要素内のすべての<p>要素を選択します。 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Descendant Selector</h2>
+
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+</body>
+</html>
+
+

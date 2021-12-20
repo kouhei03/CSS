@@ -1,0 +1,24 @@
+<!--CSS-:: after疑似要素
+::after擬似要素は、要素の内容の後にいくつかのコンテンツを挿入するために使用することができます。
+
+次の例では、各<h1>要素のコンテンツの後に画像を挿入します。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1::after {
+  content: url(smiley.gif);
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>The ::after pseudo-element inserts content after the content of an element.</p>
+
+<h1>This is a heading</h1>
+
+</body>
+</html>
+
+

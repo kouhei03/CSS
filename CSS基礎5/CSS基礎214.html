@@ -1,0 +1,25 @@
+<!--すべての最初の子<p>要素のすべての<i>要素に一致します
+次の例では、セレクターは、別の要素の最初の子である<p>要素内のすべての<i>要素と一致します。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-child i {
+  color: blue;
+} 
+</style>
+</head>
+<body>
+
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+<div>
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+</div>
+
+</body>
+</html>
+
+

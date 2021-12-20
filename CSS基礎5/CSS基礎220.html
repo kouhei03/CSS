@@ -1,0 +1,24 @@
+<!--CSS-:: before疑似要素
+::before擬似要素は、要素のコンテンツの前にいくつかのコンテンツを挿入するために使用することができます。
+
+次の例では、各<h1>要素のコンテンツの前に画像を挿入します。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1::before {
+  content: url(smiley.gif);
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+<h1>This is a heading</h1>
+
+</body>
+</html>
+
+

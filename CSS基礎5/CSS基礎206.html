@@ -1,0 +1,44 @@
+<!--隣接する兄弟セレクター（+）
+隣接する兄弟セレクターは、別の特定の要素の直後にある要素を選択するために使用されます。
+
+兄弟要素は同じ親要素を持っている必要があり、「隣接する」は「すぐに続く」ことを意味します。
+
+次の例では、<div>要素の直後に配置される最初の<p>要素を選択します。
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div + p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Adjacent Sibling Selector</h2>
+
+<p>The + selector is used to select an element that is directly after another specific element.</p>
+<p>The following example selects the first p element that are placed immediately after div elements:</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. After a div.</p>
+<p>Paragraph 4. After a div.</p>
+
+<div>
+  <p>Paragraph 5 in the div.</p>
+  <p>Paragraph 6 in the div.</p>
+</div>
+
+<p>Paragraph 7. After a div.</p>
+<p>Paragraph 8. After a div.</p>
+
+</body>
+</html>
+
+

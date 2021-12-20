@@ -1,0 +1,37 @@
+<!--垂直方向の中央揃え-位置と変換を使用
+場合paddingやline-height オプションではない、別の解決策は、使用位置とにあるtransformプロパティ：-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>Center with position and transform</h2>
+
+<p>In this example, we use positioning and the transform property to vertically and horizontally center the div element:</p>
+
+<div class="center">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,29 @@
+<!--CSS-：first-child疑似クラス
+:first-child擬似クラスは、他の要素の最初の子で指定された要素と一致します。
+
+最初の<p>要素に一致する
+次の例では、セレクターは任意の要素の最初の子である任意の<p>要素と一致します。-->
+    
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-child {
+  color: blue;
+} 
+</style>
+</head>
+<body>
+
+<p>This is some text.</p>
+<p>This is some text.</p>
+
+<div>
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+</div>
+
+</body>
+</html>
+
+
