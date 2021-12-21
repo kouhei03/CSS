@@ -1,0 +1,52 @@
+<!--ネスティングカウンター
+次の例では、ページ（セクション）に1つのカウンターを作成し、<h1>要素（サブセクション）ごとに1つのカウンターを作成します。
+    「セクション」カウンターは、「セクション<セクションカウンターの値>。」を持つ各<h1>要素に対してカウントされ、「サブセクション」カウンターは、
+「セクションカウンターの値」を持つ各<h2>要素に対してカウントされます。>。<サブセクションカウンターの値> "：-->
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    body {
+      counter-reset: section;
+    }
+    
+    h1 {
+      counter-reset: subsection;
+    }
+    
+    h1::before {
+      counter-increment: section;
+      content: "Section " counter(section) ". ";
+    }
+    
+    h2::before {
+      counter-increment: subsection;
+      content: counter(section) "." counter(subsection) " ";
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    <h1>HTML/CSS Tutorials</h1>
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+    <h2>Bootstrap</h2>
+    <h2>W3.CSS</h2>
+    
+    <h1>Scripting Tutorials</h1>
+    <h2>JavaScript</h2>
+    <h2>jQuery</h2>
+    <h2>React</h2>
+    
+    <h1>Programming Tutorials</h1>
+    <h2>Python</h2>
+    <h2>Java</h2>
+    <h2>C++</h2>
+    
+    </body>
+    </html>
+    
+    
+    

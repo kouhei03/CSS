@@ -1,0 +1,35 @@
+<!--重要について！重要
+!important ルールをオーバーライドする唯一の方法!important は、
+ソースコードに同じ（またはそれ以上の）特異性を持つ宣言に別のルールを含めることです。
+ここで問題が始まります。これにより、CSSコードが混乱し、特に大きなスタイルシートがある場合、デバッグが困難になります。
+
+ここでは、簡単な例を作成しました。CSSソースコードを見ると、どの色が最も重要であると考えられているかはあまり明確ではありません。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myid {
+  background-color: blue !important;
+}
+
+.myclass {
+  background-color: gray !important;
+}
+
+p {
+  background-color: red !important;
+}
+</style>
+</head>
+<body>
+
+<p>This is some text in a paragraph.</p>
+
+<p class="myclass">This is some text in a paragraph.</p>
+
+<p id="myid">This is some text in a paragraph.</p>
+
+</body>
+</html>
+
+

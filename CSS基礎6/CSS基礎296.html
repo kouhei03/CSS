@@ -1,0 +1,39 @@
+<!--！重要とは何ですか？
+!importantCSSのルールは、通常よりもプロパティ/値を重要視するために使用されます。
+
+実際、この!importantルールを使用すると、その要素の特定のプロパティに対する以前のすべてのスタイルルールが上書きされます。
+
+例を見てみましょう：-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myid {
+  background-color: blue;
+}
+
+.myclass {
+  background-color: gray;
+}
+
+p {
+  background-color: red !important;
+}
+</style>
+</head>
+<body>
+
+<p>This is some text in a paragraph.</p>
+
+<p class="myclass">This is some text in a paragraph.</p>
+
+<p id="myid">This is some text in a paragraph.</p>
+
+</body>
+</html>
+
+
+<!--例の説明
+上記の例では。IDセレクターとクラスセレクターの特異性は高くなりますが、
+3つの段落すべてが赤い背景色になります。!importantルールが優先されます background-color両方のケースでプロパティを。-->

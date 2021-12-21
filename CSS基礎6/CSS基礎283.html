@@ -1,0 +1,42 @@
+<!--カウンターによる自動ナンバリング
+CSSカウンターは「変数」のようなものです。変数値は、CSSルール（使用回数を追跡します）によってインクリメントできます。
+
+CSSカウンターを操作するには、次のプロパティを使用します。
+
+counter-reset -カウンターを作成またはリセットします
+counter-increment -カウンター値をインクリメントします
+content -生成されたコンテンツを挿入します
+counter()またはcounters()関数-カウンタの値を要素に追加します
+CSSカウンターを使用するには、最初にcounter-reset。を使用して作成する必要があります。
+
+次の例では、ページのカウンターを作成し（本文セレクターで）、各<h2>要素のカウンター値を
+    インクリメントし、各<h2>要素の先頭に「セクション<カウンターの値>：」を追加します。-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: section;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+</style>
+</head>
+<body>
+
+<h1>Using CSS Counters</h1>
+
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+<h2>JavaScript Tutorial</h2>
+<h2>Python Tutorial</h2>
+<h2>SQL Tutorial</h2>
+
+</body>
+</html>
+
+

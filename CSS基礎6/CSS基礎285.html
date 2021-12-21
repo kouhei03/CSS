@@ -1,0 +1,48 @@
+<!--カウンターの新しいインスタンスが子要素に自動的に作成されるため、カウンターはアウトラインリストを作成するのにも役立ちます。
+ここでは、counters()関数を使用して 、ネストされたカウンターの異なるレベルの間に文字列を挿入します。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+}
+</style>
+</head>
+<body>
+
+<ol>
+  <li>item</li>
+  <li>item   
+  <ol>
+    <li>item</li>
+    <li>item</li>
+    <li>item
+    <ol>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+    </li>
+    <li>item</li>
+  </ol>
+  </li>
+  <li>item</li>
+  <li>item</li>
+</ol>
+
+<ol>
+  <li>item</li>
+  <li>item</li>
+</ol>
+
+</body>
+</html>
+
+

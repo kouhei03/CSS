@@ -1,0 +1,29 @@
+<!--たぶん1つか2つの！importantの公正な使用
+使用する1つの方法!importantは、他の方法でオーバーライドできないスタイルをオーバーライドする必要がある場合です。
+これは、コンテンツ管理システム（CMS）で作業していて、CSSコードを編集できない場合に発生する可能性があります。
+次に、いくつかのカスタムスタイルを設定して、いくつかのCMSスタイルをオーバーライドできます。
+
+別の使用方法!importantは次のとおりです。ページ上のすべてのボタンに特別な外観が必要であると想定します。
+ここでは、ボタンは灰色の背景色、白いテキスト、およびいくつかのパディングと境界線でスタイル設定されています。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #8c8c8c; 
+  color: white;
+  padding: 5px;
+  border: 1px solid black; 
+}
+</style>
+</head>
+<body>
+
+<p>Standard button: <a class="button" href="default.asp">CSS Tutorial</a></p>
+
+<p>Standard button: <a class="button" href="/html/">HTML Tutorial</a></p>
+
+</body>
+</html>
+
+
