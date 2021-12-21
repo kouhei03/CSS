@@ -1,0 +1,27 @@
+<!--CSS [attribute ^ = "value"]セレクター
+[attribute^="value"]セレクタは、その属性値が指定された値で始まる要素を選択するために使用されます。
+
+次の例では、「top」で始まるクラス属性値を持つすべての要素を選択します。
+
+注：値は単語全体である必要はありません！ -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+[class^="top"] {
+  background: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS [attribute^="value"] Selector</h2>
+
+<h1 class="top-header">Welcome</h1>
+<p class="top-text">Hello world!</p>
+<p class="topcontent">Are you learning CSS?</p>
+
+</body>
+</html>
+
+

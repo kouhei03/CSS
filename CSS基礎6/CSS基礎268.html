@@ -1,0 +1,28 @@
+<!--CSS [attribute * = "value"]セレクター
+[attribute*="value"]セレクタは、その属性値が指定値を含む要素を選択するために使用されます。
+
+次の例では、「te」を含むクラス属性値を持つすべての要素を選択します。
+
+注：値は単語全体である必要はありません！  -->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+[class*="te"] {
+  background: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS [attribute*="value"] Selector</h2>
+
+<div class="first_test">The first div element.</div>
+<div class="second">The second div element.</div>
+<div class="my-test">The third div element.</div>
+<p class="mytest">This is some text in a paragraph.</p>
+
+</body>
+</html>
+
+
