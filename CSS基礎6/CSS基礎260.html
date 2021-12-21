@@ -1,0 +1,71 @@
+<!--画像スプライト-ナビゲーションリストを作成する
+スプライト画像（ "img_navsprites.gif"）を使用してナビゲーションリストを作成します。
+
+HTMLリストを使用します。これは、リンクであり、背景画像もサポートしているためです。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#navlist {
+  position: relative;
+}
+
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+#navlist li, #navlist a {
+  height: 44px;
+  display: block;
+}
+
+#home {
+  left: 0px;
+  width: 46px;
+  background: url('img_navsprites.gif') 0 0;
+}
+
+#prev {
+  left: 63px;
+  width: 43px;
+  background: url('img_navsprites.gif') -47px 0;
+}
+
+#next {
+  left: 129px;
+  width: 43px;
+  background: url('img_navsprites.gif') -91px 0;
+}
+</style>
+</head>
+<body>
+
+<ul id="navlist">
+  <li id="home"><a href="default.asp"></a></li>
+  <li id="prev"><a href="css_intro.asp"></a></li>
+  <li id="next"><a href="css_syntax.asp"></a></li>
+</ul>
+
+</body>
+</html>
+
+<!--説明された例：
+
+#navlist {position：relative;}-位置は相対位置に設定され、その中の絶対位置を許可します
+#navlist li {margin：0; padding：0; list-style：none; position：absolute; top：0;}-マージンとパディングは0に設定され、
+リストスタイルは削除され、すべてのリストアイテムは絶対位置に配置されます
+#navlist li、＃navlist a {height：44px; display：block;}-すべての画像の高さは44pxです
+次に、特定のパーツごとに配置とスタイル設定を開始します。
+
+#home {left：0px; width：46px;}-左端に配置され、画像の幅は46pxです
+#home {background：url（img_navsprites.gif）0 0;}-背景画像とその位置を定義します（左0px、上0px）
+#prev {left：63px; width：43px;}-右に63pxの位置にあり（#home width 46px +アイテム間の余分なスペース）、幅は43pxです。
+#prev {background：url（ 'img_navsprites.gif'）-47px 0;}-背景画像を右に47px定義します（#home width 46px + 1px linedivider）
+#next {left：129px; width：43px;}-129pxを右に配置し（#prevの開始は63px + #prev width 43px +余分なスペース）、幅は43pxです。
+#next {background：url（ 'img_navsprites.gif'）-91px 0;}-右に91pxの背景画像を定義します（#home width 46px + 1px linedivider + #prev width 43px + 1px linedivider）
+-->

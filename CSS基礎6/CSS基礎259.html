@@ -1,0 +1,47 @@
+<!--画像スプライト
+画像スプライトは、単一の画像に入れられた画像のコレクションです。
+
+多くの画像を含むWebページは、ロードに時間がかかり、複数のサーバー要求を生成する可能性があります。
+
+イメージスプライトを使用すると、サーバーリクエストの数が減り、帯域幅が節約されます。
+
+画像スプライト-簡単な例
+3つの別々の画像を使用する代わりに、次の1つの画像（ "img_navsprites.gif"）を使用します。
+CSSを使用すると、必要な画像の一部だけを表示できます。
+
+次の例では、CSSは「img_navsprites.gif」画像のどの部分を表示するかを指定します。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#home {
+  width: 46px;
+  height: 44px;
+  background: url(img_navsprites.gif) 0 0;
+}
+
+#next {
+  width: 43px;
+  height: 44px;
+  background: url(img_navsprites.gif) -91px 0;
+}
+</style>
+</head>
+<body>
+
+<img id="home" src="img_trans.gif" width="1" height="1">
+<img id="next" src="img_trans.gif" width="1" height="1">
+
+</body>
+</html>
+
+<!--説明された例：
+
+<img id="home" src="img_trans.gif">-src属性を空にすることはできないため、
+小さな透明な画像のみを定義します。表示される画像は、CSSで指定した背景画像になります
+width: 46px; height: 44px; -使用する画像の部分を定義します
+background: url(img_navsprites.gif) 0 0; -背景画像とその位置を定義します（左0px、上0px）
+これは画像スプライトを使用する最も簡単な方法です。次に、リンクとホバー効果を使用して画像スプライトを拡張します。-->
+
+
+
