@@ -1,0 +1,31 @@
+<!--境界入力
+borderプロパティを使用して境界線のサイズと色を変更し、プロパティを使用してborder-radius丸みを帯びた角を追加します-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+<h2>Input fields with borders</h2>
+
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname">
+</form>
+
+</body>
+</html>
+
+

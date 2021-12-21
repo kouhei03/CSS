@@ -1,0 +1,33 @@
+<!--アイコン/画像で入力
+入力内にアイコンが必要な場合は、background-imageプロパティを使用して、プロパティとともに配置しbackground-positionます。
+また、アイコンのスペースを予約するために大きな左パディングを追加していることに注意してください。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+</style>
+</head>
+<body>
+
+<h2>Input field with an icon inside</h2>
+
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+</body>
+</html>
+
+

@@ -1,0 +1,31 @@
+<!--パッド入り入力
+paddingプロパティを使用して、テキストフィールド内にスペースを追加します。
+ヒント：次々に多くの入力がある場合はmargin、それらの外側にスペースを追加するために、いくつかを追加することもできます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+<h2>Padded input fields</h2>
+
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname">
+</form>
+
+</body>
+</html>
+
+
