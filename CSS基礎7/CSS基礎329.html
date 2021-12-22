@@ -1,0 +1,36 @@
+<!--CSS円錐曲線グラデーション
+円錐曲線は、中心点を中心に回転する色の変化を伴うグラデーションです。
+
+円錐曲線を作成するには、少なくとも2つの色を定義する必要があります。
+
+構文
+background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+デフォルトでは、角度は0度、位置は中心です。
+
+次数が指定されていない場合、色は中心点の周りに均等に広がります。
+
+円錐曲線：3色
+次の例は、3色の円錐曲線を示しています。-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green);
+}
+</style>
+</head>
+<body>
+
+<h1>Conic Gradient - Three Colors</h1>
+
+<div id="grad1"></div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,35 @@
+<!--CSS放射状グラデーション
+放射状のグラデーションは、その中心によって定義されます。
+
+放射状グラデーションを作成するには、少なくとも2つのカラーストップも定義する必要があります。
+
+構文
+background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+デフォルトでは、形状は楕円で、サイズは最も角が大きく、位置は中央です。
+
+ラジアルグラデーション-等間隔のカラーストップ（これはデフォルトです）
+
+次の例は、カラーストップが等間隔に配置された放射状グラデーションを示しています。-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red, yellow, green);
+}
+</style>
+</head>
+<body>
+
+<h1>Radial Gradient - Evenly Spaced Color Stops</h1>
+
+<div id="grad1"></div>
+
+</body>
+</html>
+
+
