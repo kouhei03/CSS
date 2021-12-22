@@ -1,0 +1,50 @@
+<!--角度の使用
+グラデーションの方向をより細かく制御したい場合は、事前定義された方向（下、上、右、左、右下など）の代わりに
+角度を定義できます。0degの値は、「totop」に相当します。90度の値は「右へ」に相当します。180度の値は「下まで」に相当します。
+
+構文
+background-image: linear-gradient(angle, color-stop1, color-stop2);
+次の例は、線形グラデーションで角度を使用する方法を示しています。-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(0deg, red, yellow);
+}
+
+#grad2 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(90deg, red, yellow);
+}
+
+#grad3 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(180deg, red, yellow);
+}
+
+#grad4 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(-90deg, red, yellow);
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradients - Using Different Angles</h1>
+
+<div id="grad1" style="text-align:center;">0deg</div><br>
+<div id="grad2" style="text-align:center;">90deg</div><br>
+<div id="grad3" style="text-align:center;">180deg</div><br>
+<div id="grad4" style="text-align:center;">-90deg</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,41 @@
+<!--CSSグラデーションを使用すると、指定した2つ以上の色の間のスムーズな遷移を表示できます。
+
+CSSは、次の3種類のグラデーションを定義しています。
+
+線形グラデーション（下/上/左/右/対角線）
+放射状グラデーション（中心によって定義されます）
+円錐曲線（中心点を中心に回転）
+-->
+
+<!--CSS線形グラデーション
+線形グラデーションを作成するには、少なくとも2つのカラーストップを定義する必要があります。
+カラーストップは、スムーズなトランジションをレンダリングしたい色です。グラデーション効果とともに、開始点と方向（または角度）を設定することもできます。
+
+構文
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+方向-上から下（これはデフォルトです）
+
+次の例は、上から始まる線形グラデーションを示しています。赤から始まり、黄色に移行します。-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradient - Top to Bottom</h1>
+<p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+
+<div id="grad1"></div>
+
+</body>
+</html>
+
+

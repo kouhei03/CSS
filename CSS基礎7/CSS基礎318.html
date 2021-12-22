@@ -1,0 +1,26 @@
+<!--方向-対角
+
+水平方向と垂直方向の両方の開始位置を指定することにより、斜めにグラデーションを作成できます。
+次の例は、左上から始まり（右下に向かう）線形グラデーションを示しています。赤から始まり、黄色に移行します。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradient - Diagonal</h1>
+<p>This linear gradient starts red at top left, transitioning to yellow (at bottom right):</p>
+
+<div id="grad1"></div>
+
+</body>
+</html>
+
+
