@@ -1,0 +1,31 @@
+<!--いくつかのプロパティ値を変更する
+次の例では、widthプロパティとheightプロパティの両方に遷移効果を追加します。持続時間は、幅が2秒、高さが4秒です。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 4s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
+</body>
+</html>
+
+

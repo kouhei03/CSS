@@ -1,0 +1,51 @@
+<!--遷移の速度曲線を指定します
+このtransition-timing-functionプロパティは、遷移効果の速度曲線を指定します。
+
+transition-timing-functionプロパティには、次の値を指定できます。
+
+ease -開始が遅く、次に速く、次にゆっくりと終了する遷移効果を指定します（これはデフォルトです）
+linear -開始から終了まで同じ速度の遷移効果を指定します
+ease-in -スロースタートのトランジション効果を指定します
+ease-out -スローエンドのトランジション効果を指定します
+ease-in-out -開始と終了が遅い遷移効果を指定します
+cubic-bezier(n,n,n,n) -キュービックベジェ関数で独自の値を定義できます
+次の例は、使用できるさまざまな速度曲線の一部を示しています。-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-timing-function Property</h1>
+
+<p>Hover over the div elements below, to see the different speed curves:</p>
+
+<div id="div1">linear</div><br>
+<div id="div2">ease</div><br>
+<div id="div3">ease-in</div><br>
+<div id="div4">ease-out</div><br>
+<div id="div5">ease-in-out</div><br>
+
+</body>
+</html>
+
+

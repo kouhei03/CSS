@@ -1,0 +1,51 @@
+<!--CSSトランジション
+CSSトランジションを使用すると、特定の期間にわたってプロパティ値をスムーズに変更できます。
+
+下の要素にマウスを合わせると、CSS遷移効果が表示されます。-->
+<!--この章では、次のプロパティについて学習します。
+
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function-->
+
+<!--CSSトランジションの使い方は？
+トランジションエフェクトを作成するには、次の2つを指定する必要があります。
+
+効果を追加するCSSプロパティ
+効果の持続時間
+注：期間部分が指定されていない場合、デフォルト値は0であるため、遷移は効果がありません。
+
+次の例は、100px * 100px red <div>要素を示しています。<div>要素は、幅プロパティの遷移効果も指定しており、持続時間は2秒です。-->
+
+<!--指定したCSSプロパティ（幅）の値が変わると遷移効果が始まります。
+ここで、ユーザーが<div>要素の上にマウスを置いたときにwidthプロパティに新しい値を指定しましょう。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+<div></div>
+
+</body>
+</html>
+
+
