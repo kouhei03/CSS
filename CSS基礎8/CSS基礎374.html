@@ -1,0 +1,38 @@
+<!--スキュー（）メソッド
+このskew()メソッドは、指定された角度だけX軸とY軸に沿って要素を傾斜させます。
+
+次の例では、<div>要素をX軸に沿って20度、Y軸に沿って10度傾斜させます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv {
+  transform: skew(20deg,10deg);
+}
+</style>
+</head>
+<body>
+
+<h1>The skew() Method</h1>
+<p>The skew() method skews an element into a given angle.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+</div>
+
+</body>
+</html>
+
+

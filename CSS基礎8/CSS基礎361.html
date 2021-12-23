@@ -1,0 +1,60 @@
+<!--CSSWebフォント-->
+<!--CSSの@ font-faceルール
+Webフォントを使用すると、Webデザイナーはユーザーのコンピューターにインストールされていないフォントを使用できます。
+
+使用したいフォントを見つけて購入したら、Webサーバーにフォントファイルを含めるだけで、必要に応じてユーザーに自動的にダウンロードされます。
+
+「独自の」フォントはCSS@font-faceルール内で定義されます。
+
+さまざまなフォント形式
+TrueTypeフォント（TTF）
+
+TrueTypeは、1980年代後半にAppleとMicrosoftによって開発されたフォント標準です。TrueTypeは、MacOSとMicrosoftWindowsオペレーティングシステムの両方で最も一般的なフォント形式です。
+
+OpenTypeフォント（OTF）
+
+OpenTypeは、スケーラブルなコンピューターフォントのフォーマットです。TrueTypeに基づいて構築されており、Microsoftの登録商標です。OpenTypeフォントは、今日、主要なコンピュータープラットフォームで一般的に使用されています。
+
+Web Open Font Format（WOFF）
+
+WOFFは、Webページで使用するためのフォント形式です。これは2009年に開発され、現在はW3C勧告となっています。WOFFは基本的に、圧縮と追加のメタデータを備えたOpenTypeまたはTrueTypeです。目標は、帯域幅に制約のあるネットワークを介したサーバーからクライアントへのフォント配布をサポートすることです。
+
+Web Open Font Format（WOFF 2.0）
+
+WOFF1.0よりも優れた圧縮を提供するTrueType / OpenTypeフォント。
+
+SVGフォント/形状
+
+SVGフォントを使用すると、テキストを表示するときにSVGをグリフとして使用できます。SVG 1.1仕様は、SVGドキュメント内にフォントを作成できるフォントモジュールを定義しています。CSSをSVGドキュメントに適用することもでき、@ font-faceルールをSVGドキュメントのテキストに適用することもできます。
+
+埋め込みOpenTypeフォント（EOT）
+
+EOTフォントは、Webページに埋め込まれたフォントとして使用するためにMicrosoftによって設計されたOpenTypeフォントのコンパクトな形式です。
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+@font-face {
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+}
+
+* {
+   font-family: myFirstFont;
+}
+</style>
+</head>
+<body>
+
+<h1>The @font-face Rule</h1>
+
+<div>
+With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.
+</div>
+
+</body>
+</html>
+
+

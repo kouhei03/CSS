@@ -1,0 +1,40 @@
+<!--スキューX（）メソッド
+このskewX()メソッドは、指定された角度だけX軸に沿って要素を傾斜させます。
+
+次の例では、<div>要素をX軸に沿って20度傾斜させています。
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv {
+  transform: skewX(20deg);
+}
+</style>
+</head>
+<body>
+
+<h1>The skewX() Method</h1>
+
+<p>The skewX() method skews an element along the X-axis by the given angle.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is skewed 20 degrees along the X-axis.
+</div>
+
+</body>
+</html>
+
+

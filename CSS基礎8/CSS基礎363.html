@@ -1,0 +1,48 @@
+<!--CSS2D変換
+CSS変換を使用すると、要素を移動、回転、拡大縮小、および傾斜させることができます。
+
+下の要素にマウスを合わせると、2D変換が表示されます。-->
+<!--CSS2D変換メソッド
+CSStransformプロパティを使用すると、次の2D変換方法を使用できます。
+
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix()-->
+
+<!--translate（）メソッド
+このtranslate()メソッドは、要素を現在の位置から移動します（X軸とY軸に指定されたパラメーターに従って）。
+次の例では、<div>要素を現在の位置から50ピクセル右に、100ピクセル下に移動します。
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(50px,100px);
+}
+</style>
+</head>
+<body>
+
+<h1>The translate() Method</h1>
+<p>The translate() method moves an element from its current position:</p>
+
+<div>
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+
+</body>
+</html>
+
+

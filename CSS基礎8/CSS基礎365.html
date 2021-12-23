@@ -1,0 +1,36 @@
+<!--負の値を使用すると、要素が反時計回りに回転します。
+次の例では、<div>要素を反時計回りに20度回転します。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv {
+  transform: rotate(-20deg);
+}
+</style>
+</head>
+<body>
+
+<h1>The rotate() Method</h1>
+
+<p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is rotated counter-clockwise with 20 degrees.
+</div>
+
+</body>
+</html>
+
+
