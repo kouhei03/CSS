@@ -1,0 +1,31 @@
+<!--CSSワードラップ
+CSSword-wrapプロパティを使用すると、長い単語を分割して次の行に折り返すことができます。 
+
+単語が長すぎて領域内に収まらない場合、その単語は外側に展開されます。
+word-wrapプロパティを使用すると、テキストを強制的に折り返すことができます。
+単語の途中でテキストを分割することを意味する場合でも、次のようになります。
+CSSコードは次のとおりです。
+長い単語を分割して次の行に折り返すことができるようにします。-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p.test {
+  width: 11em; 
+  border: 1px solid #000000;
+  word-wrap: break-word;
+}
+</style>
+</head>
+<body>
+
+<h1>The word-wrap Property</h1>
+
+<p class="test">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+</body>
+</html>
+
+
+
