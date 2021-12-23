@@ -1,29 +1,62 @@
-<!--不透明度
-CSSopacityプロパティは、要素全体の不透明度を設定します（背景色とテキストの両方が不透明/透明になります）。
+<!--のその他の2つの可能な値background-sizeはcontain 、およびcoverです。
 
-opacityプロパティ値は、0.0（完全に透明）から1.0（完全に不透明）の間の数でなければなりません-->
+containキーワードは、（コンテンツ領域内に収まらなければならないが、その幅と高さの両方）を可能な限り大きくなるように背景画像をスケーリングします。そのため、背景画像と背景測位領域の比率によっては、背景画像で覆われていない領域が存在する場合があります。
+
+coverキーワードスケール背景画像コンテンツ領域は、完全に背景画像（その幅と高さの両方が同じであるか、コンテンツ領域を超える）によって覆われるようになっています。そのため、背景画像の一部が背景測位エリアに表示されない場合があります。
+
+次の例では、の使用を示してcontainとcover：-->
 <!DOCTYPE html>
 <html>
 <head>
 <style>
-#p1 {background-color:rgb(255,0,0);opacity:0.6;}
-#p2 {background-color:rgb(0,255,0);opacity:0.6;}
-#p3 {background-color:rgb(0,0,255);opacity:0.6;}
-#p4 {background-color:rgb(192,192,192);opacity:0.6;}
-#p5 {background-color:rgb(255,255,0);opacity:0.6;}
-#p6 {background-color:rgb(255,0,255);opacity:0.6;}
+.div1 {
+  border: 1px solid black;
+  height: 120px;
+  width: 150px;
+  background: url(img_flwr.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.div2 {
+  border: 1px solid black;
+  height: 120px;
+  width: 150px;
+  background: url(img_flwr.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.div3 {
+  border: 1px solid black;
+  height: 120px;
+  width: 150px;
+  background: url(img_flwr.gif);
+  background-repeat: no-repeat;
+}
 </style>
 </head>
 <body>
 
-<h1>Define Colors With Opacity</h1>
+<h1>The background-size Property</h1>
 
-<p id="p1">Red</p>
-<p id="p2">Green</p>
-<p id="p3">Blue</p>
-<p id="p4">Grey</p>
-<p id="p5">Yellow</p>
-<p id="p6">Cerise</p>
+<h2>background-size: contain:</h2>
+<div class="div1">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<h2>background-size: cover:</h2>
+<div class="div2">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<h2>No background-size defined:</h2>
+<div class="div3">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<p>Original image:</p>
+<img src="img_flwr.gif" alt="Flowers" width="224" height="162">
 
 </body>
 </html>

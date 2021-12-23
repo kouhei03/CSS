@@ -1,65 +1,23 @@
-<!--CSS背景-起源プロパティ
-CSSbackground-originプロパティは、背景画像の配置場所を指定します。
-
-プロパティは3つの異なる値を取ります。
-
-border-box-背景画像は境界線の左上隅から始まります
-padding-box-（デフォルト）背景画像は、パディングエッジの左上隅から始まります
-content-box-背景画像はコンテンツの左上隅から始まります
-次の例は、background-originプロパティを示しています。-->
-
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-#example1 {
-  border: 10px solid black;
-  padding: 35px;
-  background: url(http://placehold.it/300x200/e8117f/fff);
-  background-repeat: no-repeat;
-}
-
-#example2 {
-  border: 10px solid black;
-  padding: 35px;
-  background: url(http://placehold.it/300x200/e8117f/fff);
-  background-repeat: no-repeat;
-  background-origin: border-box;
-}
-
-#example3 {
-  border: 10px solid black;
-  padding: 35px;
-  background: url(http://placehold.it/300x200/e8117f/fff);
-  background-repeat: no-repeat;
-  background-origin: content-box;
+<style> 
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 stretch;
 }
 </style>
 </head>
 <body>
 
-<h1>The background-origin Property</h1>
+<h1>The border-image Property</h1>
 
-<p>No background-origin (padding-box is default):</p>
-<div id="example1">
-  <h2>Lorem Ipsum Dolor</h2>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-</div>
+<p>Here, the middle sections of the image are stretched to create the border:</p>
+<p id="borderimg">border-image: url(border.png) 30 stretch;</p>
 
-<p>background-origin: border-box:</p>
-<div id="example2">
-  <h2>Lorem Ipsum Dolor</h2>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<p>background-origin: content-box:</p>
-<div id="example3">
-  <h2>Lorem Ipsum Dolor</h2>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-</div>
+<p>Here is the original image:</p><img src="border.png">
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
 
 </body>
 </html>

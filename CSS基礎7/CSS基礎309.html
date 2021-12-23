@@ -1,30 +1,47 @@
-<!--HSLAカラー
-HSLAカラー値は、アルファチャネルを使用したHSLカラー値の拡張です。これは、カラーの不透明度を指定します。
+<!--CSSの背景サイズ
+CSSbackground-sizeプロパティを使用すると、背景画像のサイズを指定できます。
 
-HSLAカラー値は、hsla（hue、saturation、lightness、alpha）で指定されます。ここで、alphaパラメーターは不透明度を定義します。
-alphaパラメータは、0.0（完全に透明）から1.0（完全に不透明）までの数値です。-->
+サイズは、長さ、パーセンテージ、または2つのキーワード（containまたはcover）のいずれかを使用して指定できます。
+
+次の例では、背景画像のサイズを元の画像よりもはるかに小さくします（ピクセルを使用）。
+-->
 <!DOCTYPE html>
 <html>
 <head>
 <style>
-#p1 {background-color:hsla(120,100%,50%,0.3);}
-#p2 {background-color:hsla(120,100%,75%,0.3);}
-#p3 {background-color:hsla(120,100%,25%,0.3);}
-#p4 {background-color:hsla(120,60%,70%,0.3);}
-#p5 {background-color:hsla(290,100%,50%,0.3);}
-#p6 {background-color:hsla(290,60%,70%,0.3);}
+#example1 {
+  border: 1px solid black;
+  background: url(img_flwr.gif);
+  background-size: 100px 80px;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+
+#example2 {
+  border: 1px solid black;
+  background: url(img_flwr.gif);
+  background-repeat: no-repeat;
+  padding: 15px;
+}
 </style>
 </head>
 <body>
 
-<h1>Define Colors With HSLA Values</h1>
+<h1>The background-size Property</h1>
 
-<p id="p1">Green</p>
-<p id="p2">Light green</p>
-<p id="p3">Dark green</p>
-<p id="p4">Pastel green</p>
-<p id="p5">Violet</p>
-<p id="p6">Pastel violet</p>
+<p>Resized background-image:</p>
+<div id="example1">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<p>Original size of the background-image:</p>
+<div id="example2">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
 
 </body>
 </html>

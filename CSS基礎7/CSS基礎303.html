@@ -1,33 +1,45 @@
-<!--フルサイズの背景画像
-次に、ブラウザウィンドウ全体を常にカバーする背景画像をWebサイトに表示します。
-
-要件は次のとおりです。
-
-ページ全体を画像で埋めます（空白なし）
-必要に応じて画像を拡大縮小する
-ページの中央の画像
-スクロールバーを発生させないでください
-次の例は、その方法を示しています。<html>要素を使用します
-    （<html>要素は常に少なくともブラウザウィンドウの高さです）。
-        次に、固定された中央の背景を設定します。次に、background-sizeプロパティを使用してサイズを調整します。-->
+<!--楕円形のコーナーを作成することもできます。-->
 <!DOCTYPE html>
 <html>
 <head>
 <style> 
-html { 
-  background: url(http://placehold.it/300x200/e8117f/fff) no-repeat center fixed; 
-  background-size: cover;
+#rcorners1 {
+  border-radius: 50px / 15px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
 }
 
-body { 
-  color: white; 
+#rcorners2 {
+  border-radius: 15px / 50px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
 }
+
+#rcorners3 {
+  border-radius: 50%;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;
+} 
 </style>
 </head>
 <body>
 
-<h1>Full Page Background Image</h1>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<h1>The border-radius Property</h1>
+
+<p>Elliptical border - border-radius: 50px / 15px:</p>
+<p id="rcorners1"></p>
+
+<p>Elliptical border - border-radius: 15px / 50px:</p>
+<p id="rcorners2"></p>
+
+<p>Ellipse border - border-radius: 50%:</p>
+<p id="rcorners3"></p>
 
 </body>
 </html>

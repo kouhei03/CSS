@@ -1,36 +1,24 @@
-<!--HSLカラー
-HSLは、色相、彩度、明度の略です。
-
-HSLカラー値は、hsl（hue、saturation、lightness）で指定されます。
-
-色相はカラーホイールの度数です（0から360まで）：
-0（または360）は赤です
-120は緑色です
-240は青です
-彩度はパーセンテージ値です。100％はフルカラーです。
-明るさもパーセンテージです。0％は暗い（黒）、100％は白です。-->
+<!--複数の背景画像は、個々の背景プロパティ（上記のように）
+    またはbackground省略形プロパティのいずれかを使用して指定できます。
+次の例では、background省略形のプロパティを使用しています（上記の例と同じ結果）。
+-->
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-#p1 {background-color:hsl(120,100%,50%);}
-#p2 {background-color:hsl(120,100%,75%);}
-#p3 {background-color:hsl(120,100%,25%);}
-#p4 {background-color:hsl(120,60%,70%);}
-#p5 {background-color:hsl(290,100%,50%);}
-#p6 {background-color:hsl(290,60%,70%);}
+<style> 
+#example1 {
+  background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+  padding: 15px;
+}
 </style>
 </head>
 <body>
 
-<h1>Define Colors With HSL Values</h1>
-
-<p id="p1">Green</p>
-<p id="p2">Light green</p>
-<p id="p3">Dark green</p>
-<p id="p4">Pastel green</p>
-<p id="p5">Violet</p>
-<p id="p6">Pastel violet</p>
+<div id="example1">
+  <h1>Lorem Ipsum Dolor</h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
 
 </body>
 </html>

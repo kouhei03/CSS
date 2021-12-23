@@ -1,31 +1,30 @@
-<!--RGBAカラー
-RGBAカラー値は、アルファチャネルを使用したRGBカラー値の拡張です。これは、色の不透明度を指定します。
+<!--CSSの複数の背景
+CSSを使用すると、background-imageプロパティを使用して、要素に複数の背景画像を追加できます 。
 
-RGBAカラー値は、rgba（赤、緑、青、アルファ）で指定されます。
-alphaパラメータは、0.0（完全に透明）から1.0（完全に不透明）までの数値です。-->
-
+さまざまな背景画像はコンマで区切られ、画像は互いに積み重ねられ、最初の画像が視聴者に最も近くなります。
+次の例には2つの背景画像があります。最初の画像は花（下と右に配置）で、2番目の画像は紙の背景（左上隅に配置）です。-->
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-#p1 {background-color:rgba(255,0,0,0.3);}
-#p2 {background-color:rgba(0,255,0,0.3);}
-#p3 {background-color:rgba(0,0,255,0.3);}
-#p4 {background-color:rgba(192,192,192,0.3);}
-#p5 {background-color:rgba(255,255,0,0.3);}
-#p6 {background-color:rgba(255,0,255,0.3);}
+<style> 
+#example1 {
+  background-image: url(img_flwr.gif), url(paper.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
 </style>
 </head>
 <body>
 
-<h1>Define Colors With RGBA Values</h1>
+<h1>Multiple Backgrounds</h1>
+<p>The following div element has two background images:</p>
 
-<p id="p1">Red</p>
-<p id="p2">Green</p>
-<p id="p3">Blue</p>
-<p id="p4">Grey</p>
-<p id="p5">Yellow</p>
-<p id="p6">Cerise</p>
+<div id="example1">
+  <h1>Lorem Ipsum Dolor</h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
 
 </body>
 </html>

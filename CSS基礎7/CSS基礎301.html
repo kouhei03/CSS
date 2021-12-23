@@ -1,32 +1,51 @@
-<!--CSSの複数の背景
-CSSを使用すると、background-imageプロパティを使用して、要素に複数の背景画像を追加できます 。
+<!--CSSborder-radiusプロパティ
+CSS border-radiusプロパティは、要素の角の半径を定義します。
 
-さまざまな背景画像はコンマで区切られ、画像は互いに積み重ねられ、最初の画像が視聴者に最も近くなります。
+ヒント：このプロパティを使用すると、要素に丸みを帯びた角を追加できます。
 
-次の例には2つの背景画像があります。最初の画像は花（下と右に配置）で、2番目の画像は紙の背景（左上隅に配置）です。-->
-
+次に3つの例を示します。
+1.指定された背景色の要素の丸みを帯びた角：-->
 <!DOCTYPE html>
 <html>
 <head>
 <style> 
-#example1 {
-  background-image: url(http://placehold.it/350x150), url(http://placehold.it/300x200/e8117f/fff);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
-  padding: 15px;
+#rcorners1 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners3 {
+  border-radius: 25px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
 }
 </style>
 </head>
 <body>
 
-<h1>Multiple Backgrounds</h1>
-<p>The following div element has two background images:</p>
+<h1>The border-radius Property</h1>
 
-<div id="example1">
-  <h1>Lorem Ipsum Dolor</h1>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-</div>
+<p>Rounded corners for an element with a specified background color:</p>
+<p id="rcorners1">Rounded corners!</p>
+<p>Rounded corners for an element with a border:</p>
+<p id="rcorners2">Rounded corners!</p>
+<p>Rounded corners for an element with a background image:</p>
+<p id="rcorners3">Rounded corners!</p>
 
 </body>
 </html>

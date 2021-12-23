@@ -1,58 +1,35 @@
-<!--CSSのbackground-clipプロパティ
-CSSbackground-clipプロパティは、背景のペイント領域を指定します。
-
-プロパティは3つの異なる値を取ります。
-
-border-box-（デフォルト）背景は境界線の外側の端にペイントされます
-パディングボックス-背景はパディングの外側の端にペイントされます
-content-box-背景はコンテンツボックス内にペイントされます
-次の例は、background-clipプロパティを示しています。-->>
 <!DOCTYPE html>
 <html>
 <head>
 <style>
-#example1 {
-  border: 10px dotted black;
-  padding: 35px;
-  background: yellow;
+#borderimg1 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 50 round;
 }
 
-#example2 {
-  border: 10px dotted black;
-  padding: 35px;
-  background: yellow;
-  background-clip: padding-box;
+#borderimg2 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 20% round;
 }
 
-#example3 {
-  border: 10px dotted black;
-  padding: 35px;
-  background: yellow;
-  background-clip: content-box;
+#borderimg3 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30% round;
 }
 </style>
 </head>
 <body>
 
-<h1>The background-clip Property</h1>
+<h1>The border-image Property</h1>
 
-<p>No background-clip (border-box is default):</p>
-<div id="example1">
-  <h2>Lorem Ipsum Dolor</h2>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-</div>
+<p id="borderimg1">border-image: url(border.png) 50 round;</p>
+<p id="borderimg2">border-image: url(border.png) 20% round;</p>
+<p id="borderimg3">border-image: url(border.png) 30% round;</p>
 
-<p>background-clip: padding-box:</p>
-<div id="example2">
-  <h2>Lorem Ipsum Dolor</h2>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-</div>
-
-<p>background-clip: content-box:</p>
-<div id="example3">
-  <h2>Lorem Ipsum Dolor</h2>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-</div>
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
 
 </body>
 </html>

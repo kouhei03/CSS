@@ -1,46 +1,40 @@
-<!--ヒーロー画像
-<div>でさまざまな背景プロパティを使用して、ヒーロー画像（テキスト付きの大きな画像）を作成し、
-必要な場所に配置することもできます。-->
+<!--CSSborder-imageプロパティ
+CSSborder-imageプロパティを使用すると、要素の周囲の通常の境界線の代わりに使用する画像を指定できます。
 
+プロパティには3つの部分があります。
+
+境界線として使用する画像
+画像をスライスする場所
+中央のセクションを繰り返すか伸ばすかを定義します
+次の画像（「border.png」と呼ばれます）を使用します。
+
+border-imageプロパティは、画像を取り、三目並べのボードのように、9つのセクションにそれをスライス。
+次に、コーナーをコーナーに配置し、指定したとおりに中央のセクションを繰り返したり、伸ばしたりします。
+
+注意：についてborder-imageの仕事に、要素は、必要 borderプロパティセットを！
+ここでは、画像の中央のセクションを繰り返して境界線を作成します。
+
+-->
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.hero-image {
-  background: url(http://placehold.it/300x200/e8117f/fff) no-repeat center; 
-  background-size: cover;
-  height: 500px;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+<style> 
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
 }
 </style>
 </head>
 <body>
 
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">I am John Doe</h1>
-    <h3>And I'm a Photographer</h3>
-    <button>Hire me</button>
-  </div>
-</div>
+<h1>The border-image Property</h1>
 
-<p>Page content..</p>
-<p>Note that this technique will also make the image responsive: Resize the browser window to see the effect.</p>
+<p>Here, the middle sections of the image are repeated to create the border:</p>
+<p id="borderimg">border-image: url(border.png) 30 round;</p>
+
+<p>Here is the original image:</p><img src="border.png">
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
 
 </body>
 </html>

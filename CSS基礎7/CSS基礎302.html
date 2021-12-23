@@ -1,22 +1,61 @@
-<!--複数の背景画像は、個々の背景プロパティ（上記のように）またはbackground省略形プロパティのいずれかを使用して指定できます。
-次の例では、background省略形のプロパティを使用しています（上記の例と同じ結果）。-->
+<!--CSSborder-radius-各コーナーを指定
+border-radiusプロパティは、1から4つの値を持つことができます。ルールは次のとおりです。
+
+4つの値-border-radius：15px 50px 30px 5px; （最初の値は左上隅に適用され、
+2番目の値は右上隅に適用され、3番目の値は右下隅に適用され、4番目の値は左下隅に適用されます）： -->
+
 <!DOCTYPE html>
 <html>
 <head>
 <style> 
-#example1 {
-  background: url(http://placehold.it/300x200/e8117f/fff) right bottom no-repeat, url(http://placehold.it/300x200.png) left top repeat;
-  padding: 15px;
+#rcorners1 {
+  border-radius: 15px 50px 30px 5px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
 }
+
+#rcorners2 {
+  border-radius: 15px 50px 30px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners3 {
+  border-radius: 15px 50px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
+
+#rcorners4 {
+  border-radius: 15px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
 </style>
 </head>
 <body>
 
-<div id="example1">
-  <h1>Lorem Ipsum Dolor</h1>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-</div>
+<h1>The border-radius Property</h1>
+
+<p>Four values - border-radius: 15px 50px 30px 5px:</p>
+<p id="rcorners1"></p>
+
+<p>Three values - border-radius: 15px 50px 30px:</p>
+<p id="rcorners2"></p>
+
+<p>Two values - border-radius: 15px 50px:</p>
+<p id="rcorners3"></p>
+
+<p>One value - border-radius: 15px:</p>
+<p id="rcorners4"></p>
 
 </body>
 </html>
