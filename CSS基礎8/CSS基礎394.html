@@ -1,0 +1,45 @@
+<!--アニメーションを逆方向または交互のサイクルで実行する
+このanimation-directionプロパティは、アニメーションを順方向、逆方向、または交互のサイクルで再生するかどうかを指定します。
+
+Animation-directionプロパティには、次の値を指定できます。
+
+normal-アニメーションは通常どおり再生されます（順方向）。これはデフォルトです
+reverse -アニメーションは逆方向（逆方向）に再生されます
+alternate -アニメーションは最初に順方向に再生され、次に逆方向に再生されます
+alternate-reverse -アニメーションは最初に逆方向に再生され、次に順方向に再生されます
+次の例では、アニメーションを逆方向（逆方向）に実行します。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-direction: reverse;  
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles. The following example will run the animation in reverse direction (backwards):</p>
+
+<div></div>
+
+</body>
+</html>
+
+

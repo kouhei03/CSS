@@ -1,0 +1,59 @@
+<!--CSSアニメーション
+CSSを使用すると、JavaScriptやFlashを使用せずにHTML要素のアニメーションを作成できます。
+    この章では、次のプロパティについて学習します。
+
+@keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation-->
+<!--CSSアニメーションとは何ですか？
+アニメーションでは、要素をあるスタイルから別のスタイルに徐々に変更できます。
+
+CSSプロパティは、何度でも変更できます。
+
+CSSアニメーションを使用するには、最初にアニメーションのいくつかのキーフレームを指定する必要があります。
+
+キーフレームは、要素が特定の時間に持つスタイルを保持します。
+
+@keyframesルール
+@keyframes ルール内でCSSスタイルを指定すると、アニメーションは特定の時間に現在のスタイルから新しいスタイルに徐々に変化します。
+
+アニメーションを機能させるには、アニメーションを要素にバインドする必要があります。
+
+次の例では、「example」アニメーションを<div>要素にバインドします。アニメーションは4秒間続き、<div>要素の背景色が「赤」から「黄色」に徐々に変化します。-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>
+
+

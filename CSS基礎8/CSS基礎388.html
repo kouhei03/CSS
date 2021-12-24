@@ -1,0 +1,40 @@
+<!--注：このanimation-durationプロパティは、アニメーションが完了するまでにかかる時間を定義します。
+    animation-durationプロパティが指定されていない場合、デフォルト値は0秒（0秒）であるため、アニメーションは発生しません。 
+
+上記の例では、キーワード「from」と「to」（0％（開始）と100％（完了）を表す）を使用して、スタイルがいつ変更されるかを指定しました。
+パーセントを使用することも可能です。パーセントを使用すると、必要な数のスタイル変更を追加できます。
+
+次の例では、アニメーションが25％完了したとき、50％完了したとき、およびアニメーションが100％完了したときに、<div>要素の背景色を変更します。-->
+    
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>
+
+

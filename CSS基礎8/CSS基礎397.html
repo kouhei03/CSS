@@ -1,0 +1,46 @@
+<!--アニメーションの塗りつぶしモードを指定します
+CSSアニメーションは、最初のキーフレームが再生される前、または最後のキーフレームが再生された後、要素に影響を与えません。
+Animation-fill-modeプロパティは、この動作をオーバーライドできます。
+
+このanimation-fill-modeプロパティは、アニメーションが再生されていないとき（開始前、終了後、またはその両方）のターゲット要素のスタイルを指定します。
+
+Animation-fill-modeプロパティには、次の値を指定できます。
+
+none-デフォルト値。アニメーションは、実行前または実行後に要素にスタイルを適用しません
+forwards -要素は、最後のキーフレームによって設定されたスタイル値を保持します（animation-directionとanimation-iteration-countによって異なります）
+backwards -要素は、最初のキーフレームによって設定されたスタイル値を取得し（アニメーションの方向によって異なります）、アニメーションの遅延期間中はこれを保持します
+both -アニメーションは順方向と逆方向の両方のルールに従い、アニメーションのプロパティを両方向に拡張します
+次の例では、アニメーションの終了時に<div>要素が最後のキーフレームのスタイル値を保持します。-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style> 
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+      animation-name: example;
+      animation-duration: 3s;  
+      animation-fill-mode: forwards;
+    }
+    
+    @keyframes example {
+      from {top: 0px;}
+      to {top: 200px; background-color: blue;}
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h1>CSS Animation</h1>
+    
+    <p>Let the div element retain the style values set by the last keyframe when the animation ends:</p>
+    
+    <div></div>
+    
+    </body>
+    </html>
+    
+    
+    
