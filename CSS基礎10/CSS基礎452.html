@@ -1,0 +1,35 @@
+<!--CSSマスキング
+CSSマスク画像プロパティ
+CSSmask-imageプロパティは、マスクレイヤー画像を指定します。
+
+マスクレイヤー画像は、PNG画像、SVG画像、CSSグラデーション、または SVG <mask>要素にすることができます。
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask1 {
+  -webkit-mask-image: url(http://placehold.it/300x200/e8117f/aaa);
+  mask-image: url(http://placehold.it/300x200/e8117f/aaa);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>An image with a mask layer image:</h3>
+<div class="mask1">
+<img src="http://placehold.it/300x200/e8117f/fff" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="http://placehold.it/300x200/e8117f/fff" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+
