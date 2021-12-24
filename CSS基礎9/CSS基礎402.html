@@ -1,0 +1,62 @@
+<!--CSSツールチップ
+デモ：ツールチップの例
+ツールチップは、ユーザーがマウスポインターを要素上に移動したときに、何かに関する追加情報を指定するためによく使用されます
+基本的なツールチップ
+ユーザーが要素の上にマウスを移動したときに表示されるツールチップを作成します。-->
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<body style="text-align:center;">
+
+<h2>Basic Tooltip</h2>
+
+<p>Move the mouse over the text below:</p>
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+<p>Note that the position of the tooltip text isn't very good. Go back to the tutorial and continue reading on how to position the tooltip in a desirable way.</p>
+
+</body>
+</html>
+
+
+<!--例の説明
+HTML：コンテナ要素（<div>など）を使用して、それに"tooltip"クラスを追加 します。ユーザーがこの<div>の上にマウスを置くと、ツールチップテキストが表示されます。
+
+ツールチップテキストは、。を使用してインライン要素（<span>など）内に配置されますclass="tooltiptext"。
+
+CSS：tooltipクラスの使用position:relativeツールヒントのテキストを配置するために必要とされます、（ position:absolute）。 注：ツールチップの配置方法については、以下の例を参照してください。
+
+tooltiptextクラスは、実際のツールヒントテキストを保持しています。デフォルトでは非表示になっており、ホバーすると表示されます（以下を参照）。また、いくつかの基本的なスタイルを追加しました。幅120ピクセル、背景色黒、テキストの色白、中央揃えのテキスト、上下5ピクセルのパディングです。
+
+CSSborder-radiusプロパティは、ツールチップテキストに丸みを帯びた角を追加するために使用されます。
+
+:hoverセレクタは、ユーザは、<div>と上にマウスを移動したときにツールチップテキストを表示するために使用されますclass="tooltip"。
+
+-->

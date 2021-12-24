@@ -1,0 +1,69 @@
+<!--ツールチップの矢印
+ツールチップの特定の側から表示される矢印を作成するには、ツールチップの後に
+「空の」コンテンツを追加::afterし、content プロパティとともに疑似要素クラスを追加します。
+矢印自体は境界線を使用して作成されます。これにより、ツールチップが吹き出しのように見えます。
+
+この例は、ツールチップの下部に矢印を追加する方法を示しています。
+
+-->
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<body style="text-align:center;">
+
+<h2>Top Tooltip w/ Bottom Arrow</h2>
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+</body>
+</html>
+
+<!--例の説明
+矢印をツー​​ルチップの内側に配置します。矢印をツー​​ルチップtop: 100%の下部に配置します。left: 50%矢印を中央に配置します。
+
+注：このborder-widthプロパティは、矢印のサイズを指定します。これを変更する場合は、margin-left値も同じに変更してください。
+これにより、矢印が中央に配置されます。
+
+border-color矢印の中にコンテンツを変換するために使用されます。
+上部の境界線を黒に設定し、残りを透明に設定しました。すべての辺が黒の場合、黒い四角いボックスになります。
+
+この例は、ツールチップの上部に矢印を追加する方法を示しています。今回は下の境界線の色を設定していることに注意してください。-->
+
