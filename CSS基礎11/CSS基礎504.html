@@ -1,0 +1,38 @@
+<!--CSSボックスサイズ設定プロパティを使用
+このbox-sizingプロパティを使用すると、要素の幅と高さの合計にパディングと境界線を含めることができます。
+
+box-sizing: border-box;要素に設定した場合、パディングと境界線は幅と高さに含まれます。-->
+<!--これは上記と同じ例ですが、box-sizing: border-box; 両方の<div>要素に追加されています-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;  
+  padding: 50px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+<h1>With box-sizing</h1>
+
+<div class="div1">Both divs are the same size now!</div>
+<br>
+<div class="div2">Hooray!</div>
+
+</body>
+</html>
+
+

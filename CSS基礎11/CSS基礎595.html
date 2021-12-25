@@ -1,0 +1,30 @@
+<!--オリエンテーション：ポートレート/ランドスケープ
+メディアクエリを使用して、ブラウザの向きに応じてページのレイアウトを変更することもできます。
+
+ブラウザウィンドウがその高さよりも広い場合にのみ適用されるCSSプロパティのセット、
+いわゆる「横向き」の向きを設定できます。
+向きが横向きモードの場合は、水色の背景色を使用します。-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-color: lightgreen;
+}
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
+</style>
+</head>
+<body>
+
+<p>Resize the browser window. When the width of this document is larger than the height, the background color is "lightblue", otherwise it is "lightgreen".</p>
+
+</body>
+</html>
+
+

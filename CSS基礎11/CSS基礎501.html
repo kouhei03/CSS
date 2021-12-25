@@ -1,0 +1,58 @@
+<!--メディアクエリでの変数の使用
+次に、メディアクエリ内の変数値を変更します。
+ここでは、最初に.containerクラスの--fontsizeという名前の新しいローカル変数を宣言します 。
+その値を25ピクセルに設定します。次に、それを.containerさらに下のクラスで使用 します。
+次に、@media「ブラウザの幅が450px以上の場合、.containerクラスの--fontsize変数値を50pxに変更する」というルール を作成 します。
+
+完全な例は次のとおりです。-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Variable declarations */ 
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff; 
+}
+
+.container {
+  --fontsize: 25px;
+}
+
+/* Styles */ 
+body {
+  background-color: var(--blue);
+}
+
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+.container {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 15px;
+  font-size: var(--fontsize);
+}
+
+@media screen and (min-width: 450px) {
+  .container {
+    --fontsize: 50px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Using Variables in Media Queries</h1>
+
+<div class="container">
+  <h2>Lorem Ipsum</h2>
+  <p>When the browser's width is less than 450px, the font-size of this div is 25px. When it is 450px or wider, set the --fontsize variable value to 50px. Resize the browser window to see the effect.</p>
+</div>
+
+</body>
+</html>
+
+

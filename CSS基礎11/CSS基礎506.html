@@ -1,0 +1,38 @@
+<!--メディアクエリ構文
+メディアクエリはメディアタイプで構成され、trueまたはfalseのいずれかに解決される1つ以上の式を含めることができます。
+
+@media not|only mediatype and (expressions) {
+  CSS-Code;
+}
+指定されたメディアタイプがドキュメントが表示されているデバイスのタイプと一致し、メディアクエリのすべての式が真である場合、クエリの結果は真になります。メディアクエリがtrueの場合、通常のカスケードルールに従って、対応するスタイルシートまたはスタイルルールが適用されます。
+
+notまたはonly演算子を使用しない限り、メディアタイプはオプションであり、 allタイプは暗黙的に示されます。
+
+メディアごとに異なるスタイルシートを使用することもできます。
+
+<link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: pink;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Resize the browser window to see the effect!</h1>
+<p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+
+</body>
+</html>
+
+

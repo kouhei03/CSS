@@ -1,0 +1,43 @@
+<!--CSSボックスのサイズ設定
+CSSbox-sizingプロパティを使用すると、要素の幅と高さの合計にパディングと境界線を含めることができます。
+
+CSSボックスサイズ設定プロパティなし
+デフォルトでは、要素の幅と高さは次のように計算されます。
+
+幅+パディング+境界線=要素の実際の幅
+高さ+パディング+境界線=要素の実際の高さ
+
+つまり、要素の幅/高さを設定すると、要素は設定したよりも大きく表示されることがよくあります（要素の境界線とパディングが要素の指定された幅/高さに追加されるため）。
+
+次の図は、指定された幅と高さが同じ2つの<div>要素を示しています。-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;  
+  padding: 50px;
+  border: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+<h1>Without box-sizing</h1>
+
+<div class="div1">This div is smaller (width is 300px and height is 100px).</div>
+<br>
+<div class="div2">This div is bigger (width is also 300px and height is 100px).</div>
+
+</body>
+</html>
+
+
