@@ -1,0 +1,74 @@
+<!--var（）関数の構文
+このvar()関数は、CSS変数の値を挿入するために使用されます。
+
+var()関数の構文は次のとおりです。
+
+var(--name, value)
+Value	Description
+name	Required. The variable name (must start with two dashes)
+value	Optional. The fallback value (used if the variable is not found)
+注：変数名は2つのダッシュ（-）で始まる必要があり、大文字と小文字が区別されます。
+-->
+<!--var（）のしくみ
+まず第一に、CSS変数はグローバルスコープまたはローカルスコープを持つことができます。
+
+グローバル変数はドキュメント全体からアクセス/使用できますが、ローカル変数は宣言されているセレクター内でのみ使用できます。
+
+グローバルスコープで変数を作成するには、:root セレクター内で宣言します。:rootセレクタは、ドキュメントのルート要素にマッチします。
+
+ローカルスコープで変数を作成するには、それを使用するセレクター内で変数を宣言します。
+
+次の例は上記の例と同じですが、ここではvar()関数を使用します。
+
+まず、2つのグローバル変数（--blueと--white）を宣言します。次に、このvar()関数を使用して 、変数の値をスタイルシートの後半に挿入します。
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff; 
+}
+
+body {
+  background-color: var(--blue);
+}
+
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+.container {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 15px;
+}
+
+button {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<h1>Using the var() Function</h1>
+
+<div class="container">
+  <h2>Lorem Ipsum</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+  <p>
+    <button>Yes</button>
+    <button>No</button>
+  </p>
+</div>
+
+</body>
+</html>
+
+
