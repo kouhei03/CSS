@@ -1,0 +1,55 @@
+<!--CSSグリッドコンテナ
+グリッドコンテナ
+HTML要素をグリッドコンテナとして動作させるには、displayプロパティを gridまたはに設定する必要がありinline-gridます。
+
+グリッドコンテナは、列と行の内側に配置されたグリッドアイテムで構成されます。
+
+grid-template-columnsプロパティ
+このgrid-template-columnsプロパティは、グリッドレイアウトの列数を定義し、各列の幅を定義できます。
+
+値はスペースで区切られたリストであり、各値はそれぞれの列の幅を定義します。
+
+グリッドレイアウトに4列を含める場合は、4列の幅を指定します。すべての列の幅を同じにする必要がある場合は、「自動」を指定します。
+4列のグリッドを作成します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-template-columns Property</h1>
+
+<p>You can use the <em>grid-template-columns</em> property to specify the number of columns in your grid layout.</p>
+
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+</div>
+
+</body>
+</html>
+
+
