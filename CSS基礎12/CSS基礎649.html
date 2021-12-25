@@ -1,0 +1,24 @@
+<!--max-widthプロパティの使用
+場合max-widthプロパティを100％に設定され、画像はそれが持っている場合はスケールダウンが、
+元のサイズよりも大きくなるようにスケールアップすることはありません。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+
+<img src="http://placehold.it/300x200/e8117f/fff" width="460" height="345">
+<p>Resize the browser window to see how the image will scale when the width is less than 460px.</p>
+
+</body>
+</html>
+
+
